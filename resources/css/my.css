@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap");
+:root {
+  --br01: #d5d2c1;
+  --br02: #bd8e62;
+  --br03: #a46843;
+  --br04: #370d00;
+  --bl01: #edeef0;
+  --bl02: #ede1e3;
+  --bl03: #d1dfe8;
+  --bl04: #909fad;
+  --pi01: #fadcda;
+  --pi02: #eeb8b8;
+  --pi03: #c5dad1;
+  --pi04: #d5cb81;
+  --textcolor1: #12114d;
+  --textcolor2: #0d2708;
+  --textcolor3: #252525;
+  --topic1-1:#E5E4E2;
+  --topic1-2:#2B2B2B;
+  --topic1-3:#F8F8F8;
+  --topic1-4:#B0C4DE;
+  --topic2-1:#98FB98;
+  --topic2-2:#FAFAD2;
+  --topic2-3:#B0E0E6;
+  --topic2-4:#A52A2A;
+
+}
+.bg-gray{
+  background-color: var(--bl04);
+}
+.bg-skin{
+  background-color: var(--pi01);
+}
+.bg-blue{
+  background-color: var(--bl03);
+}
+.bg-yellow{
+  background-color: var(--pi04);
+}
+/* roller left */
+.myroller {
+  position: relative;
+  overflow: hidden;
+}
+.myroller .roller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgb(53, 151, 50, 0.2),
+    rgba(53, 151, 50, 0.096)
+  );
+  top:0;
+  left:  -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myroller:hover .roller {
+  left: 0;
+  transition: left 1s;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -ms-transition: left 1s;
+  -o-transition: left 1s;
+}
+/* roller right */
+.myroller .rollerr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgb(53, 151, 50, 0.2),
+    rgba(53, 151, 50, 0.096)
+  );
+  top:0;
+  right:  -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myroller:hover .rollerr {
+  right: 0;
+  transition: right 1s;
+  -webkit-transition: right 1s;
+  -moz-transition: right 1s;
+  -ms-transition: right 1s;
+  -o-transition: right 1s;
+}
+/* roller top */
+.myroller .rollert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgb(53, 151, 50, 0.2),
+    rgba(53, 151, 50, 0.096)
+  );
+  top:-100%;
+  right:  0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myroller:hover .rollert {
+  top: 0;
+  transition: top 1s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+}
+/* roller bottom*/
+.myroller .rollerb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgb(53, 151, 50, 0.2),
+    rgba(53, 151, 50, 0.096)
+  );
+  bottom:-100%;
+  right:  0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myroller:hover .rollerb {
+  bottom: 0;
+  transition: bottom 1s;
+  -webkit-transition: bottom 1s;
+  -moz-transition: bottom 1s;
+  -ms-transition: bottom 1s;
+  -o-transition: bottom 1s;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.bg-cover{
+  background-size: cover ;
+  background-position: center center;
+}
+
+body {
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+.table-rwd thead {
+  display: none;
+}
+.table-rwd tbody tr {
+  display: block;
+  margin-top: 10px;
+  border: 5px solid rgb(73, 74, 122);
+}
+
+  .table-rwd tbody tr td {
+    overflow: hidden;
+    display: block;
+  }
+  .table-rwd tbody tr td::before {
+    content: attr(data-th);
+    display: block;
+    float: left;
+    width: 20%;
+    color: var(--textcolor01);
+    font-weight: 900;
+    text-align: right;
+  }
+  .table-rwd tbody tr td span.table-col {
+    float: left;
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+}
+.title-change
+ {
+  background-color: #FF6347; /* 初始背景顏色 */
+  color: #FFFFFF; /* 初始文字顏色 */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.title-change:hover {
+  color: #F0F0F0; /* 懸停文字顏色 */
+}
+
