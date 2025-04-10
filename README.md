@@ -30,7 +30,7 @@
 ## 技術
 
 - CSS/ Bootstrap v5.1.3:rwd,排版
-- laravel:blade,route,model,controller技術
+- laravel:blade,route,model,controller技術 控制會員權限、會員中心、後臺管理
 - JS/ jQuery 3.7.1
 - MySQL 4.1.3:CRUD,正規化,JOIN
 - JS/ sweetalert2
