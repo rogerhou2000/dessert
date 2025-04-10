@@ -24,7 +24,7 @@
      ![商品管理圖片](public/images/manager3.png)
      
   4. #### 訂單管理
-     ![訂單管理圖片](public/images/managerˋ.png)
+     ![訂單管理圖片](public/images/manager4.png)
 
 
 ## 技術
